@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background-image: url("bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h2 {
+    color: #074986;
+    font-size: 6vh;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.signup_form {
+    height: 80vh;
+    width: 40vw;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    margin-left: 29%;
+    background-color: #053766;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+form {
+    height: 75.5vh;
+    width: 38vw;
+    margin-top: 2vh;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.signup_form h2 {
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.lab{
+    width: 25vh;
+    display: block;
+    text-align: left;
+    font-size: 2.5vh;
+    margin-left: 13vh;
+    margin-top: 2.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.signup_form input, #signup {
+    height: 4vh;
+    width: 35vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 2.3vh;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(124, 121, 121, 0.74);
+    background-color: white;
+}
+
+.signup_form input::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.inp{
+    width: 60vh;
+    display: inline-flex;
+    gap: 1vh;
+}
+
+.single_inp input{
+    width: 56vh;
+    /* margin-left: 3.5vh; */
+}
+
+#signup {
+    height: 5.5vh;
+    width: 12vw;
+    font-weight: bold;
+    font-size: 2.8vh;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+    background-color: #28A745;
+    color: white;
+}
+
+#signup:hover {
+    background-color: lightblue;
+    color: #074986;
+}
+
+#login {
+    margin-top: 1vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+#login a {
+    color: lightblue;
+    font-weight: bold;
+}
+
+#login a:hover{
+    color: white;
+}
+
+.php_err{
+    width: 29vw;
+    color: red;
+    margin-top: 0;
+    margin-bottom: 2vh;
+    margin-left: 11vh;
+    font-size: 2.3vh;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.empty_err{
+    width: 29vw;
+    color: red;
+    /* margin-top: 0; */
+    margin-bottom: 0vh;
+    margin-left: 11vh;
+    font-size: 2.5vh;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}

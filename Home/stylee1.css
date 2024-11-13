@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    padding-top: 10vh;
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: #053766;
+    border-bottom: 1px solid rgb(206, 204, 204);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+nav img{
+    height: 8vh;
+    width: 10vh;
+    margin-left: 10vh;
+    margin-top: 1.5vh;
+}
+
+.nav_right{
+    font-size: 3vh;
+    margin-top: 3.5vh;
+}
+
+.nav_right a{
+    color: white;
+    text-decoration: none;
+    margin-right: 5vh;
+}
+
+.nav_right a:hover{
+    text-decoration: underline;
+    color: #D7E7F6;
+}
+
+#home{
+    display: flex;
+    /* border-bottom:#dde0e0 2px solid ; */
+    background-image: url("home.jpg");
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: fit-content;
+
+}
+
+.home_left{
+    float: left;
+    width: 50%;
+    margin-left: 12vh;
+    /* color: #2b7f9b; */
+    color: #074986;
+    /* color: #074986; */
+    /* background-image: url("bg.webp"); */
+}
+
+.home_left h1{
+    font-size: 7vh;
+    color: #053766;
+    /* color: purple; */
+    margin-bottom: 0;
+    margin-top: 10vh;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.line2{
+    font-size: 6.5vh;
+    /* color: purple; */
+    color: #074986;
+    margin-left: 25vh;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.home_left p{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 3.3vh;
+    text-align:justify;
+    margin-top: 3vh;
+    margin-right: 10vh;
+    margin-left: 2vh;
+    margin-bottom: 6vh;
+    letter-spacing: 1px;
+    /* font-weight: bold; */
+}
+
+.home_left button{
+    margin-left: 29vh;
+    height: 6.5vh;
+    width: 13vw;
+    border: none;
+    border-radius: 10px;
+    background-color: #053766;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home_left button:hover{
+    background-color:#28A745;
+}
+
+.home_right{
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+#hrm_features, #why_hrm, #about_us{
+    color: #074986;
+    padding-bottom: 3vh;
+    border-bottom:#dde0e0 2px solid ;
+    text-align: justify;
+}
+
+#hrm_features h1, #why_hrm h1, #about_us h1{
+    text-align: center;
+    margin-top: 6vh;
+    font-size: 6vh;
+}
+
+.feature_num{
+    display: flex;
+    margin-bottom: 2vh;
+}
+
+.feature_num img{
+    height: 20vh;
+    width: 20vh;
+    margin-left: 15vh;
+    float: left;
+    border-radius: 30px;
+}
+
+.feature_num_right{
+    margin-left: 3vw;
+    float: right;
+}
+
+.feature_num_right h2, .why_hrm_num h2 {
+    margin-bottom: 0;
+}
+
+.feature_num_right p, .why_hrm_num p{
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    margin-right: 20vh;
+    font-size: 3vh;
+}
+
+#why_hrm, #about_us{
+    height: 80vh;
+}
+
+.why_hrm_left{
+    float: left;
+    width: 35%;
+    margin-left: 10vh;
+}
+
+.why_hrm_left img{
+    text-align: center;
+    height: 70vh;
+}
+
+.why_hrm_right{
+    float: right;
+    width: 60%;
+}
+
+.why_hrm_num h2{
+    margin-top: 5vh;
+    margin-left: 15vh;
+    margin-bottom: 0;
+}
+
+.why_hrm_num p{
+    margin-left: 23vh;
+    margin-top: 1vh;
+
+}
+
+#about_us h1{
+    /* color: #db6068; */
+    color: #e64d57;
+}
+
+.columns{
+    display: flex;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    gap: 5vh;
+}
+
+.col{
+    width: 33.33%;
+    /* border: #074986 2px solid ; */
+    border: #dde0e0 2px solid ;
+    border-radius: 25px;
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+    
+.col h2{
+    text-align: center;
+    font-size: 4vh;
+    /* color: #63a73a; */
+    text-decoration: underline;
+}
+
+.col p{
+    font-size: 3vh;
+    margin-bottom: 0;
+}
+
+.team{
+    margin-bottom: 3vh;
+}
+
+.member{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 0;
+}
+
+.member img{
+    height: 10vh;
+    width: 10vh;
+}
+
+.member p{
+    margin-top: 2vh;
+    margin-bottom: 0;  
+    font-size: 2.7vh;
+}
+
+.member p span{
+    font-size: 3vh;
+    font-weight: bold;
+}

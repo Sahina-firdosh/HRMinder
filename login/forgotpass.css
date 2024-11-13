@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-image: url("bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h2 {
+    color: #074986;
+    font-size: 6vh;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+}
+
+.forgotpass_form {
+    height: 60vh;
+    width: 36vw;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    margin-left: 31%;
+    background-color: #053766;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+form {
+    height: 55vh;
+    width: 34vw;
+    margin-top: 2vh;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.forgotpass_form h2 {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+#instruction{
+    margin: 0vh 5vh 3vh 5vh;
+    font-size: 2.3vh;
+    font-weight: bold;
+    text-align: justify;
+}
+
+label{
+    width: 25vh;
+    display: block;
+    text-align: left;
+    font-size: 2.5vh;
+    margin-left: 8vh;
+    margin-top: 2.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.forgotpass_form input, #submit {
+    height: 4vh;
+    width: 26vw;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 2.3vh;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(124, 121, 121, 0.74);
+    background-color: white;
+}
+
+.forgotpass_form input::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+input{
+    width: 48vh;
+    margin-left: 2vh;
+    margin-bottom: 3vh;
+}
+
+#submit {
+    height: 5.5vh;
+    width: 14vw;
+    font-weight: bold;
+    font-size: 2.8vh;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background-color: #28A745;
+    color: white;
+}
+
+#submit:hover {
+    background-color: lightblue;
+    color: #074986;
+}
+
+.php_err, .empty_err{
+    text-align: center;
+    color: red;
+    margin-top: 0;
+    font-size: 2.3vh;
+}
