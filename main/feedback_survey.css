@@ -1,0 +1,49 @@
+.main_container{
+    width: 80vw;
+    height: 84vh;
+    /* width: 70vw; */
+    background-color: white;
+    margin: auto;
+    margin-top: 13vh;
+    text-align: center;
+    color: #053766;
+}
+
+h1{
+    /* font-size: 6vh; */
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    text-decoration: underline;
+}
+
+table{
+    width: 78vw;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid rgb(182, 179, 179);
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #053766;
+    color: white;
+    font-weight: bold;
+    font-size: 2.7vh;
+}
+
+th, td{
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+td{
+    height: 7vh;
+    font-size: 2.5vh;
+}
+
+tr:nth-child(odd) {
+    background-color: #D7E7F6;
+}
+  

@@ -1,0 +1,189 @@
+
+    <!-- // session_start();
+    // $error="";
+    // if (!isset($_SESSION['username'])) 
+    // {
+    //     header('Location: /Minor_project/login/login.php');
+    //     exit();
+    // }
+    // else
+    // {
+    //     if ($_SESSION['Role'] !== 'HR') {
+    //         exit();
+    //     }
+    //     else
+    //     {
+            
+    //         if ($_SERVER['REQUEST_METHOD'] == 'POST') 
+    //         {
+    //             if(isset($_FILES["resume_file"]) && $_FILES["resume_file"]["error"]==0)
+    //             {
+    //                 $username = $_SESSION['username'];
+    //                 $myfile = $_FILES["resume_file"]["name"];
+    //                 $myfile_type = $_FILES["resume_file"]["type"];
+    //                 $myfile_ext=  strtolower(pathinfo($myfile, PATHINFO_EXTENSION));
+    //                 $allowed_extensions = ['pdf', 'txt', 'doc', 'docx'];
+    //                 $allowed_mime_types = ['application/pdf', 'text/plain', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+                    
+    //                 if (in_array($myfile_ext, $allowed_extensions) && in_array($myfile_type, $allowed_mime_types)) 
+    //                 {
+    
+    //                     $db_name = "hrm_db";
+    //                     $conn = new mysqli("localhost", "root", "", $db_name, 3306);
+    //                     if ($conn->connect_error) 
+    //                     {
+    //                         die("Connection failed: " . $conn->connect_error);
+    //                     } 
+
+    //                     $sql = "CREATE TABLE IF NOT EXISTS resume_screening_tb (resume_id INT AUTO_INCREMENT PRIMARY KEY, candidate_name VARCHAR(50) NOT NULL, email_id VARCHAR(100) NOT NULL, phone_number VARCHAR(15) NOT NULL, skills TEXT, education TEXT);";
+    //                     if ($conn->query($sql) === FALSE) 
+    //                     {
+    //                         die("Error creating table: " . $conn->error);
+    //                     }
+    //                     // $query = "INSERT INTO task_manager_tb (username, task, priority) VALUES ('$username', '$task', '$priority')";
+    //                     // mysqli_query($conn, $query);   
+    //                     $conn->close(); 
+    //                 }
+    //                 else
+    //                 {
+    //                     $error = "Invalid file type. Only PDF, TXT, DOC, DOCX files are allowed";
+    //                 }                
+    //             }
+    //             else
+    //             {
+    //                 $error = "This Field can't be empty";
+    //             }
+    //         }
+    //     }       
+    // } -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Minor_project/main/basic_structure.css">
+    <link rel="stylesheet" href="resume_screening.css">
+    <title>HRMinder | Ai Resume Screening</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_left">
+            <a href="/Minor_project/Home/index.html"><img src="/Minor_project/main/HRM_logo.png" alt="HRMinder"></a>
+            <!-- <img src="menu_logo2.png" alt="Menu" id="menu_logo"> -->
+        </div>
+        <!-- Organisation Name -->
+        <a href="https://jimsd.org/" class="org_name">JIMS VK</a>
+        <div class="nav_right">
+
+            <img src="/Minor_project/main/user.png" alt="User-Profile" class="Profile_pic">
+            <!-- <div class="username"><?php echo  $_SESSION['username']; ?></div> -->
+            <div class="username">USER NAME</div>
+            <!-- dropdown list -->
+            <ul class="profile_card">
+                    <li>
+                        <a href="#">
+                            <img src="/Minor_project/main/user_profile.png" alt="My Profile">
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/Minor_project/main/change_pass.png" alt="Change Password">
+                            <span>Change Password</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/Minor_project/main/logout.png" alt="Log Out">
+                            <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+
+<!-- sidebar menu -->
+    <div class="sidebar_menu">
+        <ul class="main_menu">
+            <li class="active">
+                <a href="/Minor_project/main/dashboard.php">
+                    <img src="/Minor_project/main/Dashborad.png" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/Minor_project/main/employee_data.php">
+                    <img src="/Minor_project/main/contact-data.png" alt="Employee Data">
+                    <span>Employee Data</span>
+                </a>
+            </li>
+            <li>
+                <a href="/Minor_project/main/report.php">
+                    <img src="/Minor_project/main/Report.png" alt="Analysis and Report">
+                    <span>Analysis & Report</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/Minor_project/main/attrition.png" alt="Attrition Prediction">
+                    <span>Attrition Prediction</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/Minor_project/main/resume_icon.png" alt="AI Resume Screening">
+                    <span>AI Resume Screening</span>
+                </a>
+            </li>        
+            <li>
+                <a href="/Minor_project/main/feedback_survey.php">
+                    <img src="/Minor_project/main/Survey.png" alt="Survey & feedback">
+                    <span>Survey & Feedback</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/Minor_project/main/Help_Support.png" alt="Help and Supprt">
+                    <span>Help & Support</span>
+                </a>
+            </li>
+        </ul>
+    </div>   
+    
+    <div class="main_container">
+        <h1>AI-Powered Resume Screening</h1>
+        <!-- <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post" enctype="multipart/form-data"> -->
+        <form action="resume_screening.php" method="post" enctype="multipart/form-data">
+            <label>Job Description</label><br>
+            <textarea name="job_description">Enter the job description here.</textarea><br>
+            <label>Upload Resume</label><br>
+            <input type="file" name="resume_files[]" multiple><br>
+            <p>Please upload resumes in PDF, DOCX, or TXT format for best results. Our AI-powered screening tool will analyze and match candidate skills, experience, and qualifications to streamline your hiring process. You can also upload multiple files at once for faster bulk screening.</p>
+            <!-- <div class="php_err"><?php echo $error; ?></div> -->
+            <!-- <?php if (isset($error) && $error != ""): ?>
+            <div class="error_message"><?php echo $error; ?></div>
+            <?php endif; ?> -->
+            <button type="submit" class="submit_but">Submit Resume</button>
+        </form>
+
+        <div class="resume_data">
+            <h1>Resume Data</h1>
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

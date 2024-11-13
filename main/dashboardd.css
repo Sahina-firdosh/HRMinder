@@ -1,0 +1,233 @@
+.content{
+    margin-top: 10vh;
+    height: 90vh;
+    width: 93vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* gap: 2vh; */
+    padding: 1vh;
+}
+
+.box{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 2vh;
+}
+
+.box h2{
+    text-align: center;
+    margin: 1vh;
+    border-bottom: 1px solid #053766;
+    color: #053766;
+}
+
+
+
+/*-------------------- TO DO LIST -------------------- */
+#tasks{
+    height: 32vh;
+    /* height: 70%; */
+    width: 100%;
+    padding: 0;
+    overflow-y: auto; 
+    max-height: 32vh;
+}
+
+#tasks li{
+    padding-left: 2vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+#tasks button{
+    margin: auto;
+    /* margin-right: 3vh; */
+    background-color:rgb(201, 14, 14);
+    border-color: black;
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    height: 4vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+/* #tasks li:hover{
+    background-color: rgba(177, 182, 180, 0.247);
+} */
+
+#tasks button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.164), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
+}
+
+.new_task{
+    margin: 1vh;
+    display: flex;    
+    gap: 1vh;
+}
+
+.new_task input, button{
+    height: 4vh;
+    padding: 1vh;
+    background-color: rgba(220, 220, 220, 0.445);
+    border: 1px solid #5555553b;
+    border-radius: 5px;
+    color: black;
+}
+
+#input_task{
+    width: 11vw;
+}
+
+#input-priority{
+    width: 7vw;
+}
+
+.new_task button{
+    width: 6vw;
+    background-color: rgb(0, 128, 0);
+    color: white;
+    font-weight: bold;
+}
+
+.new_task button:hover, .new_task input:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.164), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
+}
+
+
+/*-------------------- NOTICE PERIOD ALERT -------------------- */
+#alert{
+    color: rgb(190, 7, 7);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: red; 
+    }
+    50% {
+        color: #053766; 
+    }
+    100% {
+        color: red; 
+    }
+}
+
+.notice_period, .dept{
+    height: 38vh;
+    width: 99%;
+    text-align: center;
+    overflow-y: auto; 
+    display: block;
+    color: #053766;
+}
+
+/* .notice_period table, .dept table{
+    width: 97%;
+    margin: 0vh 0vh 1vh 1vh;
+    border: 1px solid #D7E7F6;
+    border-radius: 5px;
+}
+
+.notice_period tr, .dept  table{
+    height: 5vh;
+    font-size: 2.5vh;
+}
+
+.notice_period th, .dept th{
+    height: 6vh;
+    font-size: 2.5vh;
+    background-color: #D7E7F6;
+} */
+
+
+
+    /*-------------------- CALENDER -------------------- */
+    .calender{
+        padding-left: 2.5vh;
+        padding-right: 2.5vh;
+        padding-bottom: 1vh;
+    }
+
+    #month_name{
+        text-align: center;
+        margin-bottom: 1vh;
+        font-weight: bold;
+    }
+
+    #day_names {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);  
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 1vh;
+    }
+
+    #calendar_dates {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        justify-items: center;
+    }
+
+    #calendar_dates div {
+        width: 5vh;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #f9f9f9; */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 1vh;
+    }
+
+    #curr_date{
+        background-color: #053766;
+        color: white;
+    }
+
+
+
+    /*-------------------- DEPARTMENT -------------------- */
+
+    .dept{
+        height: 29vh;
+    }
+
+/* ------------------For All Tables */
+table{
+    width: 25vw;
+    margin: auto;
+    text-align: center;
+}
+
+table, th, td {
+    text-align: center;
+    border: 1px solid rgb(182, 179, 179);
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #053766;
+    color: white;
+    font-weight: bold;
+    font-size: 2.6vh;
+    height: 5vh;
+}
+
+th, td{
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+td{
+    height: 4.5vh;
+    font-size: 2.5vh;
+}
+
+tr:nth-child(odd) {
+    background-color: #D7E7F6;
+}
