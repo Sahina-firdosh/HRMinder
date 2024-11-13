@@ -1,0 +1,124 @@
+
+.help-container {
+    /* margin: auto; */
+    width: 89vw;
+    margin: auto;
+    margin-left: 3vh;
+    background-color: white;
+    color: #053766;
+}
+
+.help-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 13vh;
+    margin-left: center;
+    margin-bottom: 5vh;
+    text-decoration: underline;
+}
+
+.help-button {
+    display: block;
+    padding: 15px;
+    margin: 2vw;
+    background-color: #a3c3ff;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+}
+
+.help-button img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.ask_query, .grievances{
+    height: 55vh;
+    width: 100%;
+    margin-left: 15vh;
+}
+
+.grievances{
+    margin-bottom: 9vh;
+}
+
+.help-container input, select, textarea{
+    background-color: #D7E7F6;
+    height: 5vh;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    padding: 1vh;
+    margin-left: 2vh;
+}
+
+.help-container textarea{
+    height: 15vh;
+    width: 50vw;
+    margin-left: 0vh;
+}
+
+.submit-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 7vh;
+    width: 89vw;
+    background-color: #053766;
+    color: white;
+    margin: auto;
+    display: flex;
+    padding-left: 35vw;
+    /* text-align: center; */
+}
+
+.contact-email {
+    /* color: #666; */
+    margin-left: 2vh;
+    font-size: 2.8vh;
+    margin-top: 1.5vh;
+}
+
+.email-link {
+    color: inherit;      
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.email-link:hover {
+    text-decoration: underline; 
+}
+
+.help-button img{
+    height: 6vh;
+    width: 6vh;
+}
+
+footer img{
+    height: 6vh;
+    width: 6vh;   
+    margin-top: 0.5vh;
+}

@@ -1,0 +1,92 @@
+.main_container {
+    width: 70vw;
+    margin: auto;
+    margin-top: 13vh;
+    /* padding-left: 10vh; */
+    /* margin: 13vh 10vh 0 0vh; */
+    color: #053766;
+    background-color: white;
+    border: 1px solid gainsboro;
+    /* z-index: -1; */
+}
+
+.main_container h1 {
+    text-align: center;
+    margin-bottom: 2vh;
+    text-decoration: underline;
+    font-size: 6vh;
+    margin-top: 1.5vh;
+}
+
+.p1 {
+    margin-bottom: 2vh;
+    font-size: 3.3vh;
+    text-align: center;
+}
+
+.main_container form {
+    margin: auto;
+    width: 60vw;
+    padding-left: 4vw;
+    font-size: 2.8vh;
+    /* background-color: white; */
+}
+
+.question{
+    margin-bottom: 3vh;
+}
+
+.ques{
+    /* font-weight: bold; */
+    font-size: 3vh;
+    display: block;
+    margin-bottom: 1vh;
+}
+
+select, input[type=number]{
+    height: 4vh;
+    width: 20vw;
+    background-color: #D7E7F6;
+    color:#053766;
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type=number]::placeholder{
+    font-weight: bold;
+    color: #053766;
+}
+
+input[type=radio], input[type=checkbox]{
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+input[type=submit]{
+    height: 4vh;
+    width: 20vw;
+    margin-bottom: 7vh;
+    margin-left: 15vw;
+    background-color: green;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    height: 4vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: #053766;
+    color: white;
+    text-align: center;
+    padding-top: 0.5vh;
+    font-size: 2.3vh;
+}
+
+.php_error{
+    color: red;
+    text-align: center;
+}
